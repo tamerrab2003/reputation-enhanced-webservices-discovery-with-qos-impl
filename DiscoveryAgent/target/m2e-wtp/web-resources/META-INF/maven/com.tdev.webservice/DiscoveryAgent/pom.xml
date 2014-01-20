@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.tdev.webservice</groupId>
+	<artifactId>DiscoveryAgent</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>DiscoveryAgent Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.test.version>3.8.1</junit.test.version>
+		<jaxws.version>2.2.8</jaxws.version>
+		<juddi.client.version>3.1.5</juddi.client.version>
+		<commons.configuration.version>1.6</commons.configuration.version>
+		<commons.collections.version>3.2.1</commons.collections.version>
+		<apache.uddi.ws.version>3.1.5</apache.uddi.ws.version>
+		<log4j.version>1.2.17</log4j.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>jaxws-rt</artifactId>
+			<version>${jaxws.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.juddi</groupId>
+			<artifactId>juddi-client</artifactId>
+			<version>${juddi.client.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>${commons.configuration.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>${commons.collections.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.juddi</groupId>
+			<artifactId>uddi-ws</artifactId>
+			<version>${apache.uddi.ws.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.juddi</groupId>
+			<artifactId>juddi-client</artifactId>
+			<version>${apache.uddi.ws.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.juddi</groupId>
+			<artifactId>juddi-core</artifactId>
+			<version>${apache.uddi.ws.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>DiscoveryAgent</finalName>
+	</build>
+</project>
